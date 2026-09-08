@@ -3,6 +3,7 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
+	"caraxes/internal/banner"
 	"caraxes/internal/repo"
 )
 
@@ -17,7 +18,11 @@ var initCmd = &cobra.Command{
 		if len(args) > 0 {
 			path = args[0]
 		}
-		return repo.InitRepo(path)
+		if err := repo.InitRepo(path); err != nil {
+			return err
+		}
+		banner.Print()
+		return nil
 	},
 }
 
