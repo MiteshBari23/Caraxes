@@ -1,8 +1,10 @@
 # caraxes
 
+<img width="1068" height="267" alt="image" src="https://github.com/user-attachments/assets/0a801a7c-8abe-432d-b59d-60dbfb9fcf19" />
+
 **Caraxes** is a simple Git-like version control system implemented in Go. It supports basic Git functionality such as initializing a repository, staging files, storing objects, creating trees, and committing changes. Caraxes is designed as a learning project to understand the inner workings of Git and content-addressable storage.
 
-`caraxes init` greets you with a glowing, drop-shadowed ASCII banner rendered straight in the terminal.
+`caraxes init` greets you with the glowing, drop-shadowed ASCII banner shown above, rendered straight in the terminal.
 
 ---
 
